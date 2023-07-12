@@ -1,0 +1,21 @@
+/* COLOR PALETTE */
+:root{
+    --background-body: #18191a;
+    --background-sidebar: #242526;
+    --background-header: #2b2b47;
+    --background-logo: #ccc;
+    --text-color: #ccc;
+    --background-hover: #3a3b3c;
+    --text-link: #e8e8ff;
+    --text-link-hover: #928be7;
+    --border-color: rgb(255 255 255 / 15%);
+    --text-content: #fff;
+
+    /*    FORMULARIOS    */
+    --background-input: #3a3b3c;
+    --help-text-color: #ffff;
+
+    /*    BUTTONS    */
+    --background-button-done: #358f80;
+    --button-text-color: #ffff;
+}
