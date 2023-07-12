@@ -144,7 +144,7 @@
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Usuarios</span>
+      <span class="text">Beneficiarios</span>
     </div>
 
 <!--    CONTENT    -->
@@ -162,61 +162,24 @@
             <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
         </div>
 
-        <!-- Grupo: Correo Electronico -->
-        <div class="formulario__grupo" id="grupo__correo">
-          <label for="correo" class="formulario__label">Correo Electrónico</label>
+        <!-- Grupo: Fecha de Nacimiento -->
+        <div class="formulario__grupo" id="grupo__fecha-nacimiento">
+          <label for="nacimiento" class="formulario__label">Nombre</label>
           <div class="formulario__grupo-input">
-              <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+              <input type="date" class="formulario__input" name="nacimiento" id="nacimiento" placeholder="John Doe">
               <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
       </div>
 
-        <!-- Grupo: Contraseña -->
-        <div class="formulario__grupo" id="grupo__password">
-            <label for="password" class="formulario__label">Contraseña</label>
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password" id="password">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
-        </div>
-
-        <!-- Grupo: Contraseña 2 -->
-        <div class="formulario__grupo" id="grupo__password2">
-            <label for="password2" class="formulario__label">Repetir Contraseña</label>
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password2" id="password2">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
-        </div>
+      <!-- Grupo: Situación -->
+      <div class="formulario__grupo" id="grupo__situacion">
+        <label for="situacion" class="formulario__label">Situación</label>
+            <textarea class="formulario__text-area" name="situacion" id="situacion" placeholder="Cómo se lo encontró?"></textarea>
+        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+    </div>
 
         
-
-        <!-- Grupo: Cedula de Identidad -->
-        <div class="formulario__grupo" id="grupo__ci">
-            <label for="ci" class="formulario__label">CI</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="ci" id="ci" placeholder="9216524">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El CI solo puede contener numeros.</p>
-        </div>
-
-        <!-- Grupo: Rol -->
-        <div class="formulario__grupo" id="grupo__rol">
-          <label for="rol" class="formulario__label">Ocupación</label>
-          <div class="formulario__grupo-input">
-              <select class="formulario__input" name="rol" id="rol">
-                <option value="0" selected>Sin seleccionar</option>
-                <option value="1">Director</option>
-                <option value="2">Educador</option>
-                <option value="3">Beneficiario</option>
-              </select>
-          </div>
-          <p class="formulario__input-error">El CI solo puede contener numeros.</p>
-      </div>
 
 
         <div class="formulario__mensaje" id="formulario__mensaje">
@@ -230,7 +193,7 @@
     </form>
   </section>
 
-  <script src="/mi-rancho-front/js/form-usuario.js"></script>
+  <script src="/mi-rancho-front/js/form-beneficiario.js"></script>
   <script src="/mi-rancho-front/js/script.js"></script>
 
 </body>

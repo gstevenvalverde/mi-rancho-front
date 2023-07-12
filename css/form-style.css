@@ -43,6 +43,22 @@ main {
 	transition: .3s ease all;
 }
 
+.formulario__text-area {
+	width: 100%;
+	background: var(--background-input);
+	border: 3px solid transparent;
+	border-radius: 8px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+	outline: none;
+}
+
+.formulario__text-area::-webkit-scrollbar {
+	width: 0px;
+}
+
 .formulario__input:focus {
 	border: 2px solid var(--primary-color);
 	outline: none;
