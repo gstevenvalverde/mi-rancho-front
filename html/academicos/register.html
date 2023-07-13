@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> miRancho </title>
+    <link rel="stylesheet" href="/mi-rancho-front/css/style.css">
+    <link rel="stylesheet" href="/mi-rancho-front/css/light.css" id="theme">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <link rel="stylesheet" href="/mi-rancho-front/css/form-style.css">
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-buildings' id="logo"></i>
+      <span class="logo_name">miRancho</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="link_name">Usuario</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Usuario</a></li>
+          <li><a href="#">Crear</a></li>
+          <li><a href="#">Listar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-user' ></i>
+          <span class="link_name">Director</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Director</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-group' ></i>
+          <span class="link_name">Educador</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Educador</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-star'></i>
+            <span class="link_name">Beneficiario</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Beneficiario</a></li>
+          <li><a href="#">Crear</a></li>
+          <li><a href="#">Listar</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-school' ></i>
+            <span class="link_name">Académico</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Académico</a></li>
+          <li><a href="#">Crear</a></li>
+          <li><a href="#">Listar</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="link_name">Clínico</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Clínico</a></li>
+          <li><a href="#">Crear</a></li>
+          <li><a href="#">Listar</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Informe</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Informe</a></li>
+          <li><a href="#">Crear</a></li>
+          <li><a href="#">Listar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Estadísticas</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Estadísticas</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" id="btn-change-theme">
+          <i class='fas fa-moon' ></i>
+          <span class="link_name">Night</span>
+        </a>
+        <ul class="sub-menu blank" id="menu-mode">
+          <li><a class="link_name" href="#">Night</a></li>
+        </ul>
+      </li>
+    <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="/mi-rancho-front/assets/img/profile.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Steven</div>
+        <div class="job">Web Designer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+
+<!--    HOME SECTION    -->
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Informes Académicos</span>
+    </div>
+
+<!--    CONTENT    -->
+
+    <form action="" class="formulario" id="formulario">
+        
+        <!-- Grupo: Beneficiario -->
+          <div class="formulario__grupo" id="grupo__beneficiario">
+            <label for="beneficiario" class="formulario__label">Beneficiario</label>
+            <div class="formulario__grupo-input">
+                <select class="formulario__input" name="beneficiario" id="beneficiario">
+                    <option value="0" selected>Seleccionar beneficiario</option>
+                    <!-- Listar beneficiarios -->
+                    <option value="1">Jaimito</option>
+                    <!-- *********************** -->
+                </select>
+            </div>
+          </div>
+        <!-- Grupo: Grado Escolar -->
+        <div class="formulario__grupo" id="grupo__grado">
+            <label for="grado_escolar" class="formulario__label">Grado Escolar</label>
+            <div class="formulario__grupo-input">
+                <select class="formulario__input" name="grado_escolar" id="grado_escolar">
+                    <option value="0" selected>Seleccione el grado</option>
+                    <option value="1p">Primaria: 1</option>
+                    <option value="2p">Primaria: 2</option>
+                    <option value="3p">Primaria: 3</option>
+                    <option value="4p">Primaria: 4</option>
+                    <option value="5p">Primaria: 5</option>
+                    <option value="6p">Primaria: 6</option>
+                    <option value="1s">Secundaria: 1</option>
+                    <option value="2s">Secundaria: 2</option>
+                    <option value="3s">Secundaria: 3</option>
+                    <option value="4s">Secundaria: 4</option>
+                    <option value="5s">Secundaria: 5</option>
+                    <option value="6s">Secundaria: 6</option>
+                </select>
+            </div>
+          </div>
+
+          <!-- Grupo: Nombre Colegio -->
+        <div class="formulario__grupo" id="grupo__nombre_colegio">
+            <label for="nombre_colegio" class="formulario__label">Nombre Colegio</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre_colegio" id="nombre_colegio" placeholder="John Doe">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Rellene correctamente; solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+
+        <!-- Grupo: Direccion Colegio -->
+        <div class="formulario__grupo" id="grupo__direccion_colegio">
+            <label for="direccion_colegio" class="formulario__label">Dirección Colegio</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="direccion_colegio" id="direccion_colegio" placeholder="John Doe">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Rellene correctamente; solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+
+        
+
+        <!-- Grupo: Desempeño -->
+      <div class="formulario__grupo" id="grupo__desempeño">
+        <label for="desempeño" class="formulario__label">Situación</label>
+            <textarea class="formulario__text-area" name="desempeño" id="desempeño" placeholder="Cómo se lo encontró?"></textarea>
+        <p class="formulario__input-error">Rellene correctamente; solo puede contener numeros, letras y guion bajo.</p>
+    </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
+    </form>
+  </section>
+
+  <script src="/mi-rancho-front/js/form-academico.js"></script>
+  <script src="/mi-rancho-front/js/script.js"></script>
+
+</body>
+</html>
