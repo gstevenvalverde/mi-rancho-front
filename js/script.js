@@ -22,14 +22,14 @@ changeTheme = function(){
   var menuMode = document.getElementById("menu-mode");
 
   fileName = css.getAttribute("href");
-  if(fileName == "/mi-rancho-front/css/dark.css"){
-      css.setAttribute("href", "/mi-rancho-front/css/light.css");
+  if(fileName == "/css/dark.css"){
+      css.setAttribute("href", "/css/light.css");
       //imgLogo.src = "images/logo-light.png";
       //imgLogoFull.src = "images/logo-full-light.png";
       btnTheme.innerHTML = '<i class="fas fa-moon"></i><span class="link_name">Night</span>';
       menuMode.innerHTML = '<li><a class="link_name" href="#">Night</a></li>';
   }else{
-      css.setAttribute("href", "/mi-rancho-front/css/dark.css");
+      css.setAttribute("href", "/css/dark.css");
       //imgLogo.src = "images/logo.png";
       //imgLogoFull.src = "images/logo-full.png";
       btnTheme.innerHTML = '<i class="fas fa-sun"></i><span class="link_name">Light</span>';

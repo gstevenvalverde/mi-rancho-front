@@ -4,15 +4,14 @@
   <head>
     <meta charset="UTF-8">
     <title> miRancho </title>
-    <link rel="stylesheet" href="/mi-rancho-front/css/style.css">
-    <link rel="stylesheet" href="/mi-rancho-front/css/light.css" id="theme">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/light.css" id="theme">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-    <link rel="stylesheet" href="/mi-rancho-front/css/form-style.css">
+    <link rel="stylesheet" href="/css/form-style.css">
   <div class="sidebar close">
     <div class="logo-details">
       <i class='bx bx-buildings' id="logo"></i>
@@ -172,6 +171,20 @@
           <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
       </div>
 
+      <!-- Grupo: Motivo -->
+      <div class="formulario__grupo" id="grupo__grado">
+        <label for="grado_escolar" class="formulario__label">Motivo</label>
+        <div class="formulario__grupo-input">
+            <select class="formulario__input" name="grado_escolar" id="grado_escolar">
+                <option value="0" selected>Seleccione el motivo</option>
+                <option value="1">Abandonado</option>
+                <option value="2">Escapó</option>
+                <option value="3">Extraviado</option>
+                <option value="4">Protección</option>
+            </select>
+        </div>
+      </div>
+
       <!-- Grupo: Situación -->
       <div class="formulario__grupo" id="grupo__situacion">
         <label for="situacion" class="formulario__label">Situación</label>
@@ -193,8 +206,8 @@
     </form>
   </section>
 
-  <script src="/mi-rancho-front/js/form-beneficiario.js"></script>
-  <script src="/mi-rancho-front/js/script.js"></script>
+  <script src="/js/form-beneficiario.js"></script>
+  <script src="/js/script.js"></script>
 
 </body>
 </html>
